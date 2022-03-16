@@ -1,0 +1,13 @@
+<h1><%= @list.name %></h1>
+<button type="button">
+  <%= link_to "Add Bookmark", new_list_bookmark_path(@list) %>
+</button>
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
+  <%= @list.name %>
+  <%= image_tag @list.photo_attachment %>
+</div>
+<% @list.movies.each do |movie| %>
+  <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
+  <p><%= bookmark.movie.title %></p>
+  <%= image_tag bookmark.movie.poster_url %>
+<% end %>
