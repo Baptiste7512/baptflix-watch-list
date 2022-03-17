@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Premier projet perso après le wagon
+Création d'une watchlist de film baser sur API tmdb
+Technologie utilisé
+  -Ruby on Rails
+  -HTML/CSS
+Schema établie: 
+  -Table movie
+  -Table bookmark
+  -Table list
+Idée d'amélioration: 
+  -Intégration de Js pour dynamiser l'interface après clean du front
