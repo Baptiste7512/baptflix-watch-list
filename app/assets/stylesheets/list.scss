@@ -5,6 +5,12 @@
   text-align: center;
 }
 
+.card-category{
+  a{
+    color: white;
+  }
+}
+
 .list-item{
   display: flex;
   justify-content: space-around;
@@ -37,4 +43,10 @@
 .button:hover{
   text-shadow: blue 2px 2px 3px;
   transition: 0,5s;
+}
+
+.none-card{
+  img{
+    opacity: 0.25;
+  }
 }
