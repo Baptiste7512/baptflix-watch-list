@@ -8,9 +8,9 @@
       <% @list.movies.each do |movie| %>
         <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
           <div class="card m-1">
-            <h2 class="text-center"><%= bookmark.movie.title %></h2>
+            <h2 class="text-center"><%= bookmark.movie.title.first(15) %></h2>
             <%= link_to "Delete", bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure you want to delete this movie?"} %>
-            <%= image_tag bookmark.movie.poster_url, :width => 400, :crop => "pad" %>
+              <%= image_tag bookmark.movie.poster_url, :width => 400, :crop => "pad" %>
           </div>
       <% end %>
     </div>

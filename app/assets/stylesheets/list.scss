@@ -26,3 +26,15 @@
     }
   }
 }
+
+.button{
+  background: red;
+  border-radius: 5px;
+  border-style: none;
+  color: whitesmoke;
+}
+
+.button:hover{
+  text-shadow: blue 2px 2px 3px;
+  transition: 0,5s;
+}
