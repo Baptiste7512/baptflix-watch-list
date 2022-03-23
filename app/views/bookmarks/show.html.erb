@@ -1,0 +1,16 @@
+<div class="container">
+  <h1 class="d-flex justify-content-center">
+    <%= @bookmark.movie.title %>
+  </h1>
+
+  <div class="d-flex text-align-center">
+    <%= image_tag @bookmark.movie.poster_url, :width => 400, :crop => "pad" %>
+    <h2 class="ml-2"><%= @bookmark.movie.overview %></h2>
+  </div>
+
+  <div class="rating">
+    <p>Rating: <%= @bookmark.movie.rating%> <i class="fa fa-star"></i></p>
+  </div>
+  <%= link_to "Back", list_path(@bookmark.list_id), class: "btn btn-danger m-3" %>
+</div>
+<%= console %>
